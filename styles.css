@@ -1,0 +1,185 @@
+/* EXTREME STYLES: NO BLOAT, PURE PERFORMANCE */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Full width, no excuses */
+    padding: 2rem;
+    background: #1e1e1e; /* Dark mode, because extremists operate in the shadows */
+    color: #f5f5f5;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    max-width: 600px;
+    width: 100%;
+    text-align: center; /* Center align container content */
+    margin-bottom: 2rem; /* Space for footer */
+}
+
+h1 {
+    color: #00ff9d; /* Neon green for that hacker feel */
+    margin-top: 0;
+}
+
+.emoji-input {
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    width: calc(100% - 1rem); /* Account for padding */
+    text-align: center;
+    border: 2px solid #00ff9d;
+    border-radius: 4px;
+    background: #333;
+    color: #f5f5f5;
+}
+.emoji-input::placeholder {
+    color: #888;
+}
+
+.emoji-preview {
+    font-size: 128px; /* BIG EMOJI */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    background: #333;
+    border-radius: 4px;
+    color: #fff; /* Ensure emoji visibility */
+}
+
+.render-area {
+    position: absolute; /* HIDE IT! */
+    top: -9999px;
+    left: -9999px;
+    z-index: -1; /* Absolutely no interference */
+    opacity: 0; /* Double ensure it's not visible */
+    pointer-events: none; /* Triple ensure */
+}
+
+button {
+    background: #00ff9d;
+    color: #1e1e1e; /* Dark text on light button */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease-out, transform 0.1s ease-out;
+    text-transform: uppercase; /* SHOUT IT! */
+}
+
+button:hover {
+    background: #00e68a;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+button:disabled {
+    background: #555;
+    color: #888;
+    cursor: not-allowed;
+    transform: translateY(0px);
+}
+
+.status {
+    margin-top: 1rem;
+    color: #aaa;
+    min-height: 1.5em; /* Prevent layout shift */
+}
+
+.file-list {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.file-list div {
+    padding: 0.5rem;
+    border-bottom: 1px solid #444;
+    color: #00ff9d; /* Success green */
+}
+.file-list div:last-child {
+    border-bottom: none;
+}
+
+.error {
+    color: #ff4757; /* ERROR RED! */
+    font-weight: bold;
+}
+
+/* Footer Styles - MINIMALIST BUT EFFECTIVE */
+.app-footer {
+    width: 100%;
+    max-width: 600px; /* Match container width if centered */
+    margin-top: auto; /* Pushes footer to bottom if content is short */
+    padding: 1rem 0;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.made-with-love {
+    color: #aaa;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.made-with-love:hover {
+    color: #00ff9d;
+}
+
+.heart {
+    display: inline-block; /* Needed for transform and animation */
+    margin: 0 0.3em;
+    color: #ff4757; /* HEART RED */
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+}
+
+.footer-links a:hover {
+    color: #00ff9d;
+}
+
+.footer-links svg {
+    display: block; /* Prevents extra space under SVGs */
+}
